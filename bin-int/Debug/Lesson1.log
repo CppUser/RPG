@@ -1,0 +1,12 @@
+﻿  main.cpp
+E:\MainGameDev\SFML\Fundamentals\Lesson1\Lesson1\src\main.cpp(7,39): warning C4244: 'argument': conversion from 'T' to 'unsigned int', possible loss of data
+          with
+          [
+              T=float
+          ]
+E:\MainGameDev\SFML\Fundamentals\Lesson1\Lesson1\src\main.cpp(7,27): warning C4244: 'argument': conversion from 'T' to 'unsigned int', possible loss of data
+          with
+          [
+              T=float
+          ]
+  Lesson1.vcxproj -> E:\MainGameDev\SFML\Fundamentals\Lesson1\Lesson1\bin\Debug\Lesson1.exe
