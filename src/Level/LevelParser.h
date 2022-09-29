@@ -16,6 +16,7 @@ private:
 	
 	void Parse(const std::string& source);
 	void ParseMetaData(const std::string& block);
+	void ParseDecorationData(const std::string& block);
 private:
 	//std::unordered_map<int, std::string> m_LevelSource;
 	

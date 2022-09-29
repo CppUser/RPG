@@ -8,6 +8,88 @@ Meta  {
     StartY: 0;
  }
     
+    
 Decorations {
-        
-    }
+    id: 1
+    [
+        Type: "Sky";
+        Layer:1;
+        Transform: "Fixed"
+        [
+            Position:[0,0];
+            Rotation:0;
+            Scale:0;
+        ]
+        TileId: 1
+        [
+            Position:[0,0];
+            Size[0,0];
+            
+        ]
+    ];  
+    id: 2
+    [
+        Type: "Ground";
+        Layer:2;
+        Transform: "nFixed"
+        [
+            Position:
+            [
+                TileId: 1 - [0,200];
+                TileId: 2 - [0,236];
+                TileId: 3 - [0,272];
+                TileId: 4 - [0,306];
+            ]
+            Rotation:0;
+            Scale:0;
+        ]
+        TileId: 1
+        [
+            Position:[1];
+            Size[36,36];
+        ]
+        TileId: 2
+        [
+            Position:[1];
+            Size[36,36];
+        ]
+        TileId: 3
+        [
+            Position:[1];
+            Size[36,36];
+        ]
+        TileId: 4
+        [
+            Position:[1];
+            Size[36,36];
+        ]
+    ];
+    id: 3
+    [
+        Type: "Clouds";
+        Layer:3;
+        Transform: "nFixed"
+        [
+            Position:
+            [
+                TileId: 1 - [0,200];
+                TileId: 1 - [0,236];
+                TileId: 1 - [0,272];
+                TileId: 1 - [0,306]; 
+            ]
+            Rotation:0;
+            Scale:0;
+        ]
+        TileId: 1
+        [
+            Position:[0,0];
+            Size[22,22];
+            
+        ]
+    ];     
+}
+    
+Collision {
+    
+}
+

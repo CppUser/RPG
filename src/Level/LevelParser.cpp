@@ -128,12 +128,14 @@ void LevelParser::Parse(const std::string& source)
     
     const char* token;
     const char* metastr;
-    const char* decstr;
-    const char* collstr;
+
         
     metastr = source.c_str();
     while (token = FindToken(metastr,"Meta"))
-        ParseMetaData(GetBlock(token,&metastr));   
+        ParseMetaData(GetBlock(token,&metastr));
+    
+    while (token = FindToken(metastr,"Decorations"))
+        ParseDecorationData(GetBlock(token,&metastr)); 
 
     //printf("%s",str.c_str());
     
@@ -172,4 +174,30 @@ void LevelParser::ParseMetaData(const std::string& block)
         
         MetaData->AddFields(type,std::stof(name));
     }
+}
+
+void LevelParser::ParseDecorationData(const std::string& block)
+{
+    std::vector<std::string> tokens = Tokenize(block);
+    uint32_t index = 1;
+
+    index++;
+
+    while (index < tokens.size())
+    {
+        if (tokens[index] == "}")
+            break;
+        
+        std::string typeString = tokens[index++];
+        std::string name = tokens[index++];
+
+    
+    
+        
+        //printf("%s",typeString.c_str());
+        //printf("%s\n",name.c_str());
+    }
+    
+
+    
 }
