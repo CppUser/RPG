@@ -1,13 +1,12 @@
 #Level
 
-Meta:
-    {
-    Name:"Test"
-    SizeX: 600
-    SizeY: 400
-    StartX: 0
-    StartY: 0
-    }
+Meta  {
+    Name: "Test";
+    SizeX: 600;
+    SizeY: 400;
+    StartX: 0;
+    StartY: 0;
+ }
     
 Decorations:
     {

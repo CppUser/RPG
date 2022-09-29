@@ -11,6 +11,7 @@ int main()
 	sf::RenderWindow window(vm, "SFML window", sf::Style::Default);
 
 	LevelParser levelData = LevelParser("Assets/Levels/Test.level");
+
 	
 	while (window.isOpen())
 	{
