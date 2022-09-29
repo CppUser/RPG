@@ -2,6 +2,7 @@
 #include <string>
 #include <unordered_map>
 
+class LevelStruct;
 //TODO: use name SceneParser
 class LevelParser
 {
@@ -19,6 +20,8 @@ private:
 	//std::unordered_map<int, std::string> m_LevelSource;
 	
 	std::string m_FileName,m_AssetPath;
+
+
 };
 
 

@@ -172,44 +172,4 @@ void LevelParser::ParseMetaData(const std::string& block)
         
         MetaData->AddFields(type,std::stof(name));
     }
-    MetaData->TempPrintValues();
 }
-
-
-// std::unordered_map<int, std::string> LevelParser::PreProcess(const std::string& source)
-// {
-//     //this func to test propper spelling of level type
-//     std::unordered_map<int, std::string> levelSources;
-//
-//     const char* typeToken = "#type";
-//     size_t typeTokenLength = strlen(typeToken);
-//     size_t pos = source.find(typeToken, 0);
-//     while (pos != std::string::npos)
-//     {
-//         size_t eol = source.find_first_of("\r\n", pos);
-//         if (eol != std::string::npos)
-//         {
-//             printf("Syntax error");
-//         }
-//         
-//         size_t begin = pos + typeTokenLength + 1;
-//         std::string type = source.substr(begin, eol - begin);
-//         if (type == "level")
-//         {
-//             
-//         }
-//        
-//
-//         size_t nextLinePos = source.find_first_not_of("\r\n", eol);
-//         pos = source.find(typeToken, nextLinePos);
-//         int levelType;
-//         if (type == "level")
-//         {
-//             levelType = 1;
-//         }
-//         
-//         levelSources[levelType] = source.substr(nextLinePos, pos - (nextLinePos == std::string::npos ? source.size() - 1 : nextLinePos));
-//         
-//     }
-//     return levelSources;
-// }

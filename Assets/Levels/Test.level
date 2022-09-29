@@ -8,7 +8,6 @@ Meta  {
     StartY: 0;
  }
     
-Decorations:
-    {
+Decorations {
         
     }

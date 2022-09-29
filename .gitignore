@@ -1,7 +1,16 @@
+# Binaries
+**/bin/
+/bin-int/
+
+# Sacrum files
+*.log
+
+# Visual Studio files and folder
 .vs/
-.vscode/
+**.sln
+**.vcxproj
+**.vcxproj.filters
+**.vcxproj.user
+
+# Rider files
 .idea/
-
-bin/
-bin-int/
-
